@@ -1,0 +1,24 @@
+{
+    "name": "tainamsilva",
+    "version": "0.0.1",
+    "description": "tainamsilva's website",
+    "author": "Matheus Costa <matheusagcosta@gmail.com>",
+    "private": true,
+    "scripts": {
+      "dev": "harp server _src & browser-sync start --no-open --proxy 'localhost:9000' --files '**/*.jade, **/*.scss, **/*.json, **/*.js, **/*.md' --no-notify",
+      "build": "harp compile _src docs"
+    },
+    "devDependencies": {
+      "browser-sync": "^2.26.7",
+      "harp": "^0.30.1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/tainamrsilva-ts/ts.git"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/tainamrsilva-ts/ts/issues"
+    },
+    "homepage": "https://github.com/tainamrsilva-ts/ts#readme"
+  }
