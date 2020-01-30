@@ -5,11 +5,11 @@ body {
 }
 
 body {
-    // temporario
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     padding: 0;
     margin: 0;
+    // temporario
 }
 
 h1,
@@ -18,6 +18,11 @@ h3,
 h4,
 h5,
 h6 {
-    // temporario
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    // temporario
+}
+
+a {
+    text-decoration: none;
 }
