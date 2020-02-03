@@ -1,0 +1,45 @@
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    // temporario
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    // temporario
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+span {
+    width: 150px;
+    font-size: 24px;
+    background-color: #9EC681;
+    color: white;
+}
+
+button {
+    background-color: darkgray;
+    width: 150px;
+    height: 75px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
