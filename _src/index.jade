@@ -6,11 +6,11 @@
     h1.home__title Tainá Silva
     p.home__description Bacharel em Arquitetura e Urbanismo pela Universidade do Sagrado Coração (USC) de Bauru-SP. Mestre em Arquitetura e Urbanismo pela Faculdade de Arquitetura, Artes e Comunicação (FAAC) da Universidade Estadual Paulista (UNESP) de Bauru na linha de Teoria, História e Projeto (bolsista FAPESP Processo 2017/10302-5). Durante o mestrado, realizou estágio de pesquisa com apoio da FAPESP na École Nationale Supérieure d'Architecture, cidade de Paris, França, com supervisão da prof. Dra. Karen Bowie (BEPE Processo 2018/01711-1). 
       br
-      br 
+      br
       É colaboradora no projeto Memória Ferroviária (FAPESP Processo 2016/15921-2), coordenado pelo prof. Dr. Eduardo Romero de Oliveira. Tem como recorte de estudo o século XIX e se interessa pelas pesquisas na área de arquitetura industrial e ferroviária; história da engenharia; e tratados ferroviários, especialmente produção europeia.
     
     for tag, slug in public.data._data
-      .container
+      .container__tags
         span.tags__span #{ tag.title }
       .container__buttons
         a(href="#{ tag.link-1 }")= tag.button-1            
