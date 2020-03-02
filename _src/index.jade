@@ -11,40 +11,15 @@
     
     for tag, slug in public.data._data
       .container__tags
-        span.tags__span #{ tag.title }
+        span.tags #{ tag.title }
       .container__buttons
-        a(href="#{ tag.link-1 }")= tag.button-1            
-        a(href="#{ tag.link-2 }")= tag.button-2
-        if tag.button-3             
-          a(href="#{ tag.link-3 }")= tag.button-3   
-    
-    
-    //- .container__tags
-    //-     span.tags__span Currículo
-    //- .container__buttons
-    //-     a(href="http://lattes.cnpq.br/5504507008490995") 
-    //-         button.buttons.link__buttons Lattes
-    //-     a(href="https://orcid.org/0000-0003-4176-0869") 
-    //-         button.buttons.link__buttons OrcID
-    //-     a(href="https://bv.fapesp.br/pt/pesquisador/694147/taina-maria-silva/") 
-    //-         button.buttons.link__buttons FAPESP
-    //- .container__tags
-    //-     span.tags__span Confira alguns textos em:
-    //- .container__buttons
-    //-     a(href="https://www.researchgate.net/profile/Taina_Silva5") 
-    //-         button.buttons.link__buttons ResearchGate
-    //-     a(href="https://locaweb.academia.edu/Tain%C3%A1Silva") 
-    //-         button.buttons.link__buttons Academia.edu
-    //- .container__tags
-    //-     span.tags__span Na mídia
-    //- .container__buttons
-    //-     a(href="https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/") 
-    //-         button.buttons.link__buttons Sketch TV USP
-    //-     a(href="https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/") 
-    //-         button.buttons.link__buttons Apresentação na III Jornada de Jovens Pesquisadores
-    //-     a(href="https://projetomemoriaferroviaria.wordpress.com/2018/10/29/atividades-mf-em-setembro-xvii-congreso-internacional-ticcih-chile-2018/") 
-    //-         button.buttons.link__buttons Apresentação no IV Congresso Internacional TICCIH Chile 2018
-    
+        a(href="#{ tag.link_1 }", target='_blank')= tag.button_1
+          //- button.buttons
+        a(href="#{ tag.link_2 }", target='_blank')= tag.button_2
+          //- button.buttons 
+        if tag.button_3             
+          a(href="#{ tag.link_3 }", target='_blank')= tag.button_3
+            //- button.buttons
   
   
 

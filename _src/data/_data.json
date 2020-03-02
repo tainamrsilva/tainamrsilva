@@ -1,27 +1,27 @@
 {
   "tag-1": {
     "title": "Currículo",
-    "button-1": "Lattes",
-    "link-1": "http://lattes.cnpq.br/5504507008490995",
-    "button-2": "OrcID",
-    "link-2": "https://orcid.org/0000-0003-4176-0869",
-    "button-3": "FAPESP",
-    "link-3": "https://bv.fapesp.br/pt/pesquisador/694147/taina-maria-silva/"
+    "button_1": "Lattes",
+    "link_1": "http://lattes.cnpq.br/5504507008490995",
+    "button_2": "OrcID",
+    "link_2": "https://orcid.org/0000-0003-4176-0869",
+    "button_3": "FAPESP",
+    "link_3": "https://bv.fapesp.br/pt/pesquisador/694147/taina-maria-silva/"
   },
   "tag-2": {
     "title": "Confira alguns textos em:",
-    "button-1": "ResearchGate",
-    "link-1": "https://www.researchgate.net/profile/Taina_Silva5",
-    "button-2": "Academia.edu",
-    "link-2": "https://locaweb.academia.edu/Tain%C3%A1Silva"
+    "button_1": "ResearchGate",
+    "link_1": "https://www.researchgate.net/profile/Taina_Silva5",
+    "button_2": "Academia.edu",
+    "link_2": "https://locaweb.academia.edu/Tain%C3%A1Silva"
   },
   "tag-3": {
     "title": "Na mídia",
-    "button-1": "Sketch TV USP",
-    "link-1": "https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/",
-    "button-2": "Apresentação na III Jornada de Jovens Pesquisadores",
-    "link-2": "https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/",
-    "button-3": "Apresentação no IV Congresso Internacional TICCIH Chile 2018",
-    "link-3": "https://projetomemoriaferroviaria.wordpress.com/2018/10/29/atividades-mf-em-setembro-xvii-congreso-internacional-ticcih-chile-2018/"
+    "button_1": "Sketch TV USP",
+    "link_1": "https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/",
+    "button_2": "Apresentação na III Jornada de Jovens Pesquisadores",
+    "link_2": "https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/",
+    "button_3": "Apresentação no IV Congresso Internacional TICCIH Chile 2018",
+    "link_3": "https://projetomemoriaferroviaria.wordpress.com/2018/10/29/atividades-mf-em-setembro-xvii-congreso-internacional-ticcih-chile-2018/"
   }
 }
