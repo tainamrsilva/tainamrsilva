@@ -24,8 +24,18 @@ h6 {
 }
 
 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    
+    background-color: darkgray;
+    width: 150px;
+    height: 75px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 7px;
+    box-shadow: 3px 3px lightgray;
 }
 
 span {
@@ -35,11 +45,11 @@ span {
     color: white;
 }
 
-button {
-    background-color: darkgray;
-    width: 150px;
-    height: 75px;
-    color: white;
-    border-radius: 7px;
-    cursor: pointer;
-}
+// button {
+//     background-color: darkgray;
+//     width: 150px;
+//     height: 75px;
+//     color: white;
+//     border-radius: 7px;
+//     cursor: pointer;
+// }

@@ -1,39 +1,26 @@
 .container
-    .container__image
-        svg(width='600', height='800', viewbox='0 0 30 30', fill='none', xmlns='http://www.w3.org/2000/svg')
-            path(d='M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM22.5 16.5H16.5V22.5H13.5V16.5H7.5V13.5H13.5V7.5H16.5V13.5H22.5V16.5Z', fill='#9EC681')
-    .container__home
-        h1.home__title Tainá Silva
-        p.home__description Bacharel em Arquitetura e Urbanismo pela Universidade do Sagrado Coração (USC) de Bauru-SP. Mestre em Arquitetura e Urbanismo pela Faculdade de Arquitetura, Artes e Comunicação (FAAC) da Universidade Estadual Paulista (UNESP) de Bauru na linha de Teoria, História e Projeto (bolsista FAPESP Processo 2017/10302-5). Durante o mestrado, realizou estágio de pesquisa com apoio da FAPESP na École Nationale Supérieure d'Architecture, cidade de Paris, França, com supervisão da prof. Dra. Karen Bowie (BEPE Processo 2018/01711-1). 
-            <br />
-            <br /> É colaboradora no projeto Memória Ferroviária (FAPESP Processo 2016/15921-2), coordenado pelo prof. Dr. Eduardo Romero de Oliveira. Tem como recorte de estudo o século XIX e se interessa pelas pesquisas na área de arquitetura industrial e ferroviária; história da engenharia; e tratados ferroviários, especialmente produção europeia.
-        .container__tags
-            span.tags__span Currículo
-        .container__buttons
-            a(href="http://lattes.cnpq.br/5504507008490995") 
-                button.buttons.link__buttons Lattes
-            a(href="https://orcid.org/0000-0003-4176-0869") 
-                button.buttons.link__buttons OrcID
-            a(href="https://bv.fapesp.br/pt/pesquisador/694147/taina-maria-silva/") 
-                button.buttons.link__buttons FAPESP
-        .container__tags
-            span.tags__span Confira alguns textos em:
-        .container__buttons
-            a(href="https://www.researchgate.net/profile/Taina_Silva5") 
-                button.buttons.link__buttons ResearchGate
-            a(href="https://locaweb.academia.edu/Tain%C3%A1Silva") 
-                button.buttons.link__buttons Academia.edu
-        .container__tags
-            span.tags__span Na mídia
-        .container__buttons
-            a(href="https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/") 
-                button.buttons.link__buttons Sketch TV USP
-            a(href="https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/") 
-                button.buttons.link__buttons Apresentação na III Jornada de Jovens Pesquisadores
-            a(href="https://projetomemoriaferroviaria.wordpress.com/2018/10/29/atividades-mf-em-setembro-xvii-congreso-internacional-ticcih-chile-2018/") 
-                button.buttons.link__buttons Apresentação no IV Congresso Internacional TICCIH Chile 2018
-        
+  .container__image
+    svg(width='600', height='800', viewbox='0 0 30 30', fill='none', xmlns='http://www.w3.org/2000/svg')
+      path(d='M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM22.5 16.5H16.5V22.5H13.5V16.5H7.5V13.5H13.5V7.5H16.5V13.5H22.5V16.5Z', fill='#9EC681')
+  .container__home
+    h1.home__title Tainá Silva
+    p.home__description Bacharel em Arquitetura e Urbanismo pela Universidade do Sagrado Coração (USC) de Bauru-SP. Mestre em Arquitetura e Urbanismo pela Faculdade de Arquitetura, Artes e Comunicação (FAAC) da Universidade Estadual Paulista (UNESP) de Bauru na linha de Teoria, História e Projeto (bolsista FAPESP Processo 2017/10302-5). Durante o mestrado, realizou estágio de pesquisa com apoio da FAPESP na École Nationale Supérieure d'Architecture, cidade de Paris, França, com supervisão da prof. Dra. Karen Bowie (BEPE Processo 2018/01711-1). 
+      br
+      br
+      É colaboradora no projeto Memória Ferroviária (FAPESP Processo 2016/15921-2), coordenado pelo prof. Dr. Eduardo Romero de Oliveira. Tem como recorte de estudo o século XIX e se interessa pelas pesquisas na área de arquitetura industrial e ferroviária; história da engenharia; e tratados ferroviários, especialmente produção europeia.
     
-    
+    for tag, slug in public.data._data
+      .container__tags
+        span.tags #{ tag.title }
+      .container__buttons
+        a(href="#{ tag.link_1 }", target='_blank')= tag.button_1
+          //- button.buttons
+        a(href="#{ tag.link_2 }", target='_blank')= tag.button_2
+          //- button.buttons 
+        if tag.button_3             
+          a(href="#{ tag.link_3 }", target='_blank')= tag.button_3
+            //- button.buttons
+  
+  
 
-    
+  
