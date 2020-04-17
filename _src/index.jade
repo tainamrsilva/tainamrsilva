@@ -1,39 +1,98 @@
 .container
-    .container__image
-        svg(width='600', height='800', viewbox='0 0 30 30', fill='none', xmlns='http://www.w3.org/2000/svg')
-            path(d='M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM22.5 16.5H16.5V22.5H13.5V16.5H7.5V13.5H13.5V7.5H16.5V13.5H22.5V16.5Z', fill='#9EC681')
-    .container__home
-        h1.home__title Tainá Silva
-        p.home__description Bacharel em Arquitetura e Urbanismo pela Universidade do Sagrado Coração (USC) de Bauru-SP. Mestre em Arquitetura e Urbanismo pela Faculdade de Arquitetura, Artes e Comunicação (FAAC) da Universidade Estadual Paulista (UNESP) de Bauru na linha de Teoria, História e Projeto (bolsista FAPESP Processo 2017/10302-5). Durante o mestrado, realizou estágio de pesquisa com apoio da FAPESP na École Nationale Supérieure d'Architecture, cidade de Paris, França, com supervisão da prof. Dra. Karen Bowie (BEPE Processo 2018/01711-1). 
-            <br />
-            <br /> É colaboradora no projeto Memória Ferroviária (FAPESP Processo 2016/15921-2), coordenado pelo prof. Dr. Eduardo Romero de Oliveira. Tem como recorte de estudo o século XIX e se interessa pelas pesquisas na área de arquitetura industrial e ferroviária; história da engenharia; e tratados ferroviários, especialmente produção europeia.
-        .container__tags
-            span.tags__span Currículo
-        .container__buttons
-            a(href="http://lattes.cnpq.br/5504507008490995") 
-                button.buttons.link__buttons Lattes
-            a(href="https://orcid.org/0000-0003-4176-0869") 
-                button.buttons.link__buttons OrcID
-            a(href="https://bv.fapesp.br/pt/pesquisador/694147/taina-maria-silva/") 
-                button.buttons.link__buttons FAPESP
-        .container__tags
-            span.tags__span Confira alguns textos em:
-        .container__buttons
-            a(href="https://www.researchgate.net/profile/Taina_Silva5") 
-                button.buttons.link__buttons ResearchGate
-            a(href="https://locaweb.academia.edu/Tain%C3%A1Silva") 
-                button.buttons.link__buttons Academia.edu
-        .container__tags
-            span.tags__span Na mídia
-        .container__buttons
-            a(href="https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/") 
-                button.buttons.link__buttons Sketch TV USP
-            a(href="https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/") 
-                button.buttons.link__buttons Apresentação na III Jornada de Jovens Pesquisadores
-            a(href="https://projetomemoriaferroviaria.wordpress.com/2018/10/29/atividades-mf-em-setembro-xvii-congreso-internacional-ticcih-chile-2018/") 
-                button.buttons.link__buttons Apresentação no IV Congresso Internacional TICCIH Chile 2018
-        
-    
-    
+  #header
+    .header
+      h1.header__title Tainá M. Silva
+      span.header__subtitle Arquiteta Pesquisadora
+      section.divider
+    .header__footer
+      a.header__links(href="#") Currículo
+      a.header__links(href="#") Publicações
+      a.header__links(href="#") Links
+      a.header__links(href="#") Contato
+
+  #section
+    .section--lighter
+      p.section--lighter__text Bacharel em Arquitetura e Urbanismo pela Universidade do Sagrado Coração (USC) de Bauru-SP. Mestre em Arquitetura e Urbanismo pela Faculdade de Arquitetura, Artes e Comunicação (FAAC) da Universidade Estadual Paulista (UNESP) de Bauru na linha de Teoria, História e Projeto (bolsista FAPESP Processo 2017/10302-5). Durante o mestrado, realizou estágio de pesquisa com apoio da FAPESP na École Nationale Supérieure d'Architecture, cidade de Paris, França, com supervisão da prof. Dra. Karen Bowie (BEPE Processo 2018/01711-1). 
+        <br>É colaboradora no projeto Memória Ferroviária (FAPESP Processo 2016/15921-2), coordenado pelo prof. Dr. Eduardo Romero de Oliveira.
+        <br>Tem como recorte de estudo o século XIX e se interessa pelas pesquisas na área de arquitetura industrial e ferroviária; história da engenharia; e tratados ferroviários, especialmente produção europeia.
+      .section--lighter__vector
+        svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+          path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+
 
     
+    .section--darker
+      h2.section--darker__title Currículo
+      section.divider
+      .section--darker__section.box
+        .box
+          a.box__links(href="http://lattes.cnpq.br/5504507008490995" target="_blank") Lattes
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="https://orcid.org/0000-0003-4176-0869" target="_blank") OrcID
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="https://bv.fapesp.br/pt/pesquisador/694147/taina-maria-silva/" target="_blank") FAPESP
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+      
+
+    .section--lighter
+      h2.section--lighter__title Publicações
+      section.divider
+      .section--darker__section.box
+        .box
+          a.box__links(href="#") Dissertações
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="https://www.researchgate.net/profile/Taina_Silva5") ResearchGate
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="https://locaweb.academia.edu/Tain%C3%A1Silva") Academia.edu
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="#") Google Acadêmico
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+         
+    .section--darker
+      h2.section--darker__title Links
+      section.divider
+      .section--darker__section.box
+        .box
+          a.box__links(href="https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/") Sketch TV
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="#") Visualizador cartográfico
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="https://www.facebook.com/projetomemoriaferroviaria/videos/312325822998264/") III Jornada de Jovens Pesquisadores 
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="https://projetomemoriaferroviaria.wordpress.com/2018/10/29/atividades-mf-em-setembro-xvii-congreso-internacional-ticcih-chile-2018/") IV Congresso Internacional TICCIH Chile
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+        .box
+          a.box__links(href="#") Artigo na Revista Pós USP
+            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+
+
+    .section--lighter
+      .section--lighter__icon
+        svg(xmlns='http://www.w3.org/2000/svg', width='32', height='23', fill='none', viewbox='0 0 32 23')
+          path(fill='#fff', d='M29.257 0H2.743C2.015 0 1.318.297.803.825A2.855 2.855 0 000 2.816v17.368c0 .747.289 1.463.803 1.991a2.707 2.707 0 001.94.825h26.514c.728 0 1.425-.297 1.94-.825A2.855 2.855 0 0032 20.184V2.816c0-.747-.289-1.463-.803-1.991A2.707 2.707 0 0029.257 0zM2.743 1.878h26.514c.243 0 .475.098.647.275a.952.952 0 01.267.663v.423L16 12.063 1.829 3.24v-.423c0-.249.096-.487.267-.663a.902.902 0 01.647-.275zm26.514 19.244H2.743a.903.903 0 01-.647-.274.952.952 0 01-.267-.664V5.444l13.714 8.497a.807.807 0 00.914 0l13.714-8.496v14.739a.952.952 0 01-.267.663.902.902 0 01-.647.275z')
+      h2.section--lighter__title Contato
+      section.divider
+      .section--lighter__section
+        span #[a(href= "mailto: # ") Clique aqui] para enviar um email
+
+      
