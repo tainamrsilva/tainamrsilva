@@ -1,9 +1,14 @@
 .header {
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  color: white;
+  background-image: url('../assets/taina.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
 
+  &__headline {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
 
   &__title,
   &__subtitle {

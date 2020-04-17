@@ -1,3 +1,9 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 html,
 body {
   min-height: 100%;
@@ -31,6 +37,10 @@ h6 {
   color: white;
   font-size: 30px;
 
+}
+
+span {
+  font-family: pt mono;
 }
 
 .container {
