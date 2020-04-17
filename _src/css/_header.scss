@@ -1,0 +1,45 @@
+.header {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+
+  &__title,
+  &__subtitle {
+    font-family: lucida grande;
+  }
+
+  &__title {
+    font-size: 85px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 30px;  
+    padding: 50px 0;
+  }
+
+  &__footer {
+    color: white;
+    font-family: PT mono;
+    font-weight: bolder;
+    position: fixed;
+    bottom: 25px;
+    padding: 50px;
+  }
+
+  &__links {
+    margin-right: 30px;
+    color: white;
+  }
+
+}
+
+
+
+
+
+
+
+
