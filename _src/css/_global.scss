@@ -16,7 +16,8 @@ body {
   top: 0;
 }
 
-a {
+a,
+span {
   color: white;
   font-family: pt mono;
   font-weight: bold;
@@ -36,58 +37,4 @@ h6 {
   font-family: Lucida Grande;
   color: white;
   font-size: 30px;
-
-}
-
-span {
-  font-family: pt mono;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-
-  #header {
-    width: 50%;
-    height: 100%;
-    background-color: #737373;
-    position: fixed;
-    float: left;
-  }
-
-  #section {
-    width: 50%;
-    min-height: 100%;
-    float: right;
-    overflow-y: scroll;
-  }
-
-.divider {
-  width: 70px;
-  border: 2px solid white;    
-}
-
-.box {
-
-  padding: 25px 0;
-  width: 100%;
-}
-
-.box__links {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  text-decoration: none;
-  font-size: 18px;
-  border-bottom: 2px solid #454545;
-  padding: 0 0 15px;
-}
-
-.box__image {
-  transform: rotate(-90deg);
-}
-
-
 }
