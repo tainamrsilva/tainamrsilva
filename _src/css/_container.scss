@@ -3,32 +3,6 @@
   height: 100%;
   margin: 0;
   padding: 0;
-
-  .divider {
-    width: 70px;
-    border: 2px solid white;    
-  }
-
-  .box {
-    padding: 25px 0;
-    width: 100%;
-  }
-
-  .box__links {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-decoration: none;
-    font-size: 18px;
-    border-bottom: 2px solid #454545;
-    padding: 0 0 15px;
-  }
-
-  .box__image {
-    transform: rotate(-90deg);
-  }
 }
-
-// Rever classes para: .divider, .box, .box__links, .box__image
 
 

@@ -1,5 +1,5 @@
 {
-  "tag-1": {
+  "box-1": {
     "title": "Currículo",
     "button_1": "Lattes",
     "link_1": "http://lattes.cnpq.br/5504507008490995",
@@ -8,8 +8,8 @@
     "button_3": "FAPESP",
     "link_3": "https://bv.fapesp.br/pt/pesquisador/694147/taina-maria-silva/"
   },
-  "tag-2": {
-    "title": "Confira alguns textos em:",
+  "box-2": {
+    "title": "Dissertações",
     "button_1": "ResearchGate",
     "link_1": "https://www.researchgate.net/profile/Taina_Silva5",
     "button_2": "Academia.edu",
