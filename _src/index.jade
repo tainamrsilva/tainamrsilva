@@ -39,29 +39,7 @@
               path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
 
     #publicacoes.section--lighter
-      h2.section--lighter__title Publicações
-      hr.divider
-      .section--lighter__section.box
-        
-        //- each box, slug in public.data._data
-        //-   .box #{ box.box-2 }  arrumar o loop
-
-        .box  
-          a.box__links(href="https://repositorio.unesp.br/handle/11449/190802" target="_blank") Dissertações
-            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
-              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
-        .box
-          a.box__links(href="https://www.researchgate.net/profile/Taina_Silva5" target="_blank") ResearchGate
-            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
-              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
-        .box
-          a.box__links(href="https://locaweb.academia.edu/Tain%C3%A1Silva" target="_blank") Academia.edu
-            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
-              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
-        .box
-          a.box__links(href="https://scholar.google.com/citations?user=4cOubIUAAAAJ&hl=pt-BR" target="_blank") Google Acadêmico
-            svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
-              path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+      != partial("publish/_publish")
          
     #links.section--darker
       h2.section--darker__title Links
@@ -95,6 +73,8 @@
       h2.section--lighter__title Contato
       hr.divider
       .section--lighter__section
-        span #[a(href= "mailto: # ") Clique aqui] para enviar um email
+        a(href= "mailto: # ") Clique aqui
+        | &nbsp; &nbsp;
+        span para enviar um email
 
       

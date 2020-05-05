@@ -18,6 +18,8 @@
     }
   
     .box {
+      display: flex;
+      flex-direction: column;
       padding: 25px 0;
     }
 
@@ -64,6 +66,8 @@
     }
 
     &__section {
+      display: flex;
+      justify-content: center;
       color: white;
       padding: 70px 0;
       width: 100%;
