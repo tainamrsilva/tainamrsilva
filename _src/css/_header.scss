@@ -1,9 +1,19 @@
 .header {
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  color: white;
+  width: 50%;
+  height: 100%;
+  background-color: #737373;
+  position: fixed;
+  float: left;
+  background-image: url('../assets/taina.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
 
+  &__headline {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
 
   &__title,
   &__subtitle {
@@ -11,7 +21,7 @@
   }
 
   &__title {
-    font-size: 85px;
+    font-size: 90px;
     margin: 0;
   }
 
@@ -20,9 +30,14 @@
     padding: 50px 0;
   }
 
+  &__divider {
+    text-align: left;
+    margin: 0;
+    width: 70px;
+    border: 2px solid white;    
+  }
+
   &__footer {
-    color: white;
-    font-family: PT mono;
     font-weight: bolder;
     position: fixed;
     bottom: 25px;

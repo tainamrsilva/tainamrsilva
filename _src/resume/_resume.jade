@@ -1,0 +1,10 @@
+h2.section--darker__title Currículo
+hr.divider
+.section--darker__section.box
+    
+  each resume, slug in public.resume._data
+    .box
+      a.box__links(href="#{ resume.link }" target="_blank") #{ resume.title }
+        svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+          path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
+  
