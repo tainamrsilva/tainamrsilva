@@ -23,6 +23,10 @@
       padding: 25px 0;
     }
 
+    .box--links {
+      padding: 20px 0;
+    }
+
     .box__links {
       display: flex;
       justify-content: space-between;
@@ -73,10 +77,10 @@
       width: 100%;
     }
 
-      span {
-        display: flex;
-        justify-content: center;
-      }
+    span {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &--darker {
@@ -86,7 +90,7 @@
       display: flex;
       justify-content: center;
     }
-  
+
     &__section {
       display: flex;
       flex-direction: column;
@@ -94,5 +98,4 @@
       padding-top: 50px;  
     }
   }
-
 }
