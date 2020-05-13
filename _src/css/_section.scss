@@ -4,6 +4,10 @@
   float: right;
   overflow-y: scroll;
 
+  @media screen and (max-width: $tablet-up) {
+    width: 100%;
+  }
+
   &--lighter,
   &--darker {
     padding: 50px;
