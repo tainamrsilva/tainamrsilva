@@ -13,8 +13,9 @@
     height: 25%;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 9998;
     background-size: 100%;
+    background-position: bottom center;
   }
 
 
@@ -72,25 +73,20 @@
       position: absolute;
       width: 100%;
       font-size: 14px;
-      top: 0px;
+      bottom: 0px;
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      line-height: 25px;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 15px;
     }
   }
 
   &__links {
     margin-right: 30px;
     color: white;
+
+    @media screen and (max-width: $tablet-up) {
+      margin: 0;
+    }
   }
-
 }
-
-
-
-
-
-
-
-
