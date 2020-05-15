@@ -85,9 +85,13 @@
     &__text {
       color: white;
       font-family: pt mono;
-      line-height: 28px;
+      line-height: 25px;
       font-size: 16px;
       text-align: justify;
+
+      @media screen and (min-width: $web) {
+        line-height: 28px;
+      }
 
       @media screen and (max-width: $web-up) {
         padding: 50px;
@@ -108,13 +112,22 @@
     }
 
     &__vector {
-      position: absolute;
-      bottom: 20px;
+      position: relative;
+      bottom: 0;
       padding: 50px;
+
+      @media screen and (max-width: $hd) {
+        position: absolute;
+      }
 
       @media screen and (max-width: $web-up) {
         position: relative;
+        bottom: 40px;
+      }
 
+      @media screen and (max-width: $mobile-up) {
+        position: relative;
+        bottom: 25px;
       }
     }
 
