@@ -26,10 +26,17 @@
     .box {
       display: flex;
       flex-direction: column;
-      padding: 25px 0;
+
+      @media screen and (min-width: $hd-up) {
+        padding: 50px 0;
+      }
+
+      @media screen and (max-width: $hd-up) {
+        padding: 25px 0;
+      }
 
       @media screen and (max-width: $web-up) {
-        padding: 50px 35px;
+        padding: 50px 0;
       }
 
       @media screen and (max-width: $tablet-up) {
@@ -40,8 +47,12 @@
     .box--links {
       padding: 20px 0;
 
+      @media screen and (min-width: $hd-up) {
+        padding: 50px 0;
+      }
+
       @media screen and (max-width: $web-up) {
-        padding: 40px 35px;
+        padding: 40px 0;
       }
 
       @media screen and (max-width: $tablet-up) {
@@ -70,7 +81,7 @@
 
       @media screen and (max-width: $mobile-up) {
         font-size: 14px;
-        padding: 0;
+        
       }
     }
 
@@ -85,11 +96,14 @@
     &__text {
       color: white;
       font-family: pt mono;
-      line-height: 25px;
       font-size: 16px;
       text-align: justify;
 
-      @media screen and (min-width: $web) {
+      @media screen and (min-width: $hd-up) {
+        line-height: 60px;
+      }
+
+      @media screen and (max-width: $hd-up) {
         line-height: 28px;
       }
 
@@ -107,26 +121,26 @@
       @media screen and (max-width: $mobile-up) {
         line-height: 20px;
         font-size: 11px;
-        padding: 0;
       }
     }
 
     &__vector {
-      position: relative;
-      bottom: 0;
       padding: 50px;
 
-      @media screen and (max-width: $hd) {
+      @media screen and (min-width: $hd-up) {
         position: absolute;
+        bottom: 0;
+      }
+
+      @media screen and (max-width: $web) {
+        position: relative;
       }
 
       @media screen and (max-width: $web-up) {
-        position: relative;
         bottom: 40px;
       }
 
       @media screen and (max-width: $mobile-up) {
-        position: relative;
         bottom: 25px;
       }
     }
