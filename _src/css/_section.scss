@@ -45,10 +45,12 @@
     }
 
     .box--links {
-      padding: 20px 0;
-
       @media screen and (min-width: $hd-up) {
         padding: 50px 0;
+      }
+      
+      @media screen and (max-width: $hd-up) {
+        padding: 20px 0;
       }
 
       @media screen and (max-width: $web-up) {
