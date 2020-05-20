@@ -27,7 +27,7 @@
       display: flex;
       flex-direction: column;
 
-      @media screen and (min-width: $hd-up) {
+      @media screen and (min-width: $hd) {
         padding: 50px 0;
       }
 
@@ -45,7 +45,7 @@
     }
 
     .box--links {
-      @media screen and (min-width: $hd-up) {
+      @media screen and (min-width: $hd) {
         padding: 50px 0;
       }
       
@@ -101,7 +101,7 @@
       font-size: 16px;
       text-align: justify;
 
-      @media screen and (min-width: $hd-up) {
+      @media screen and (min-width: $hd) {
         line-height: 60px;
       }
 
