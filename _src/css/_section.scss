@@ -4,6 +4,12 @@
   float: right;
   overflow-y: scroll;
 
+  @media screen and (max-width: $web-up) {
+    position: relative;
+    top: 30%;
+    width: 100%;
+  }
+   
   &--lighter,
   &--darker {
     padding: 50px;
@@ -11,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-
+    
     .divider {
       width: 70px;
       border: 2px solid white;    
@@ -20,11 +26,45 @@
     .box {
       display: flex;
       flex-direction: column;
-      padding: 25px 0;
+
+      @media screen and (min-width: $hd) {
+        padding: 50px 0;
+      }
+
+      @media screen and (max-width: $hd-up) {
+        padding: 25px 0;
+      }
+
+      @media screen and (max-width: $web-up) {
+        padding: 50px 0;
+      }
+
+      @media screen and (max-width: $tablet-up) {
+        padding: 25px 0;
+      }
     }
 
     .box--links {
-      padding: 20px 0;
+      @media screen and (min-width: $hd) {
+        padding: 50px 0;
+      }
+      
+      @media screen and (max-width: $hd-up) {
+        padding: 20px 0;
+      }
+
+      @media screen and (max-width: $web-up) {
+        padding: 40px 0;
+      }
+
+      @media screen and (max-width: $tablet-up) {
+        padding: 25px 0;
+      }
+
+      @media screen and (max-width: $mobile-up) {
+        padding: 20px 0;
+      }
+
     }
 
     .box__links {
@@ -35,6 +75,16 @@
       font-size: 18px;
       border-bottom: 2px solid #454545;
       padding: 0 0 15px;
+
+      @media screen and (max-width: $web-up) {
+        font-size: 16px;
+        padding: 0;
+      }
+
+      @media screen and (max-width: $mobile-up) {
+        font-size: 14px;
+        
+      }
     }
 
     .box__image {
@@ -48,15 +98,53 @@
     &__text {
       color: white;
       font-family: pt mono;
-      line-height: 25px;
       font-size: 16px;
       text-align: justify;
+
+      @media screen and (min-width: $hd) {
+        line-height: 60px;
+      }
+
+      @media screen and (max-width: $hd-up) {
+        line-height: 28px;
+      }
+
+      @media screen and (max-width: $web-up) {
+        padding: 50px;
+        line-height: 45px;
+        }
+          
+      @media screen and (max-width: $tablet-up) {
+        padding: 0;
+        line-height: 30px;
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: $mobile-up) {
+        line-height: 20px;
+        font-size: 11px;
+      }
     }
 
     &__vector {
-      position: absolute;
-      bottom: 20px;
       padding: 50px;
+
+      @media screen and (min-width: $hd-up) {
+        position: absolute;
+        bottom: 0;
+      }
+
+      @media screen and (max-width: $web) {
+        position: relative;
+      }
+
+      @media screen and (max-width: $web-up) {
+        bottom: 40px;
+      }
+
+      @media screen and (max-width: $mobile-up) {
+        bottom: 25px;
+      }
     }
 
     &__icon {
