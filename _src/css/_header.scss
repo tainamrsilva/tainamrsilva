@@ -7,6 +7,7 @@
   background-image: url('../assets/taina.png');
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-size: cover;
 
   @media screen and (max-width: $web-up) {
     width: 100%;
@@ -14,9 +15,8 @@
     position: absolute;
     top: 0;
     background-size: 100%;
-    background-position: bottom center;
+    background-position: center;
   }
-
 
   &__headline {
     padding: 50px;
