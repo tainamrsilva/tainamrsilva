@@ -6,8 +6,11 @@
   float: left;
   background-image: url('../assets/taina.png');
   background-repeat: no-repeat;
-  background-position: bottom center;
   background-size: cover;
+
+  @media screen and (min-width: $web) {
+    background-position: bottom center;
+  }
 
   @media screen and (max-width: $web-up) {
     width: 100%;
