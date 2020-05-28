@@ -1,6 +1,4 @@
 .header {
-  width: 50%;
-  height: 100%;
   background-color: #737373;
   position: fixed;
   float: left;
@@ -8,27 +6,31 @@
   background-repeat: no-repeat;
 
   @media screen and (min-width: $web) {
+    width: 50%;
+    height: 100%;
     background-position: bottom center;
     background-size: cover;
   }
 
   @media screen and (max-width: $web-up) {
     width: 100%;
-    height: 30%;
-    position: absolute;
+    height: 35%;
     top: 0;
     background-size: 100%;
     background-position: center;
   }
 
   &__headline {
-    padding: 50px;
     display: flex;
     flex-direction: column;
     color: white;
 
     @media screen and (max-width: $web-up) {
       align-items: center;
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding: 50px;
     }
 
     @media screen and (max-width: $tablet-up) {
@@ -89,19 +91,25 @@
 
   &__footer {
     font-weight: bolder;
-    position: fixed;
-    bottom: 25px;
-    padding: 50px;
+    
+    @media screen and (min-width: $web) {
+      position: fixed;
+      bottom: 25px;
+      padding: 50px;
+    }
 
     @media screen and (max-width: $web-up) {
       position: absolute;
       width: 100%;
       font-size: 14px;
-      bottom: 0px;
+      bottom: 10%;
       display: flex;
-      flex-direction: row;
       justify-content: space-evenly;
       padding: 15px;
+    }
+
+    @media screen and (max-width: $tablet-up) {
+      font-size: 13px;
     }
   }
 

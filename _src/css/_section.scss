@@ -6,7 +6,7 @@
 
   @media screen and (max-width: $web-up) {
     position: relative;
-    top: 30%;
+    top: 35%;
     width: 100%;
   }
    
@@ -83,7 +83,6 @@
 
       @media screen and (max-width: $mobile-up) {
         font-size: 14px;
-        
       }
     }
 
@@ -129,13 +128,14 @@
     &__vector {
       padding: 50px;
 
-      @media screen and (min-width: $hd-up) {
+      @media screen and (min-width: $hd) {
         position: absolute;
         bottom: 0;
       }
 
-      @media screen and (max-width: $web) {
+      @media screen and (max-width: $hd-up) {
         position: relative;
+        bottom: 25px;
       }
 
       @media screen and (max-width: $web-up) {
