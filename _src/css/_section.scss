@@ -1,4 +1,4 @@
-.section {
+.section__block {
   width: 50%;
   min-height: 100%;
   float: right;
@@ -23,7 +23,7 @@
       border: 2px solid white;    
     }
   
-    .box {
+    .list__box {
       display: flex;
       flex-direction: column;
 
@@ -42,29 +42,28 @@
       @media screen and (max-width: $tablet-up) {
         padding: 25px 0;
       }
-    }
 
-    .box--links {
-      @media screen and (min-width: $hd) {
-        padding: 50px 0;
-      }
-      
-      @media screen and (max-width: $hd-up) {
-        padding: 20px 0;
-      }
+      .box--links {
+        @media screen and (min-width: $hd) {
+          padding: 30px 0;
+        }
+        
+        @media screen and (max-width: $hd-up) {
+          padding: 15px 0;
+        }
 
-      @media screen and (max-width: $web-up) {
-        padding: 40px 0;
-      }
+        @media screen and (max-width: $web-up) {
+          padding: 40px 0;
+        }
 
-      @media screen and (max-width: $tablet-up) {
-        padding: 25px 0;
-      }
+        @media screen and (max-width: $tablet-up) {
+          padding: 25px 0;
+        }
 
-      @media screen and (max-width: $mobile-up) {
-        padding: 20px 0;
+        @media screen and (max-width: $mobile-up) {
+          padding: 20px 0;
+        }
       }
-
     }
 
     .box__links {
@@ -101,7 +100,7 @@
       text-align: justify;
 
       @media screen and (min-width: $hd) {
-        line-height: 60px;
+        line-height: 40px;
       }
 
       @media screen and (max-width: $hd-up) {
@@ -157,7 +156,7 @@
       border-radius: 50%;
     }
 
-    &__section {
+    &__list {
       display: flex;
       justify-content: center;
       color: white;
@@ -179,7 +178,7 @@
       justify-content: center;
     }
 
-    &__section {
+    &__list {
       display: flex;
       flex-direction: column;
       width: 100%;
