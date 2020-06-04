@@ -1,10 +1,10 @@
 h2.section__block--darker__title Links
 hr.divider
-.section__block--darker__list.list__box
+.section__block--darker.list
     
   each links, slug in public.links._data
     .list__box.box--links
-      a.box__links(href="#{ links.link }" target="_blank") #{ links.title }
-        svg.box__image(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
+      a.list__links(href="#{ links.link }" target="_blank") #{ links.title }
+        svg.list__vector(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
           path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
   

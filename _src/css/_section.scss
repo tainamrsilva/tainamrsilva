@@ -21,73 +21,7 @@
     .divider {
       width: 70px;
       border: 2px solid white;    
-    }
-  
-    .list__box {
-      display: flex;
-      flex-direction: column;
-
-      @media screen and (min-width: $hd) {
-        padding: 50px 0;
-      }
-
-      @media screen and (max-width: $hd-up) {
-        padding: 25px 0;
-      }
-
-      @media screen and (max-width: $web-up) {
-        padding: 50px 0;
-      }
-
-      @media screen and (max-width: $tablet-up) {
-        padding: 25px 0;
-      }
-
-      .box--links {
-        @media screen and (min-width: $hd) {
-          padding: 30px 0;
-        }
-        
-        @media screen and (max-width: $hd-up) {
-          padding: 15px 0;
-        }
-
-        @media screen and (max-width: $web-up) {
-          padding: 40px 0;
-        }
-
-        @media screen and (max-width: $tablet-up) {
-          padding: 25px 0;
-        }
-
-        @media screen and (max-width: $mobile-up) {
-          padding: 20px 0;
-        }
-      }
-    }
-
-    .box__links {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      text-decoration: none;
-      font-size: 18px;
-      border-bottom: 2px solid #454545;
-      padding: 0 0 15px;
-
-      @media screen and (max-width: $web-up) {
-        font-size: 16px;
-        padding: 0;
-      }
-
-      @media screen and (max-width: $mobile-up) {
-        font-size: 14px;
-      }
-    }
-
-    .box__image {
-      transform: rotate(-90deg);
-    }
+    }    
   }
 
   &--lighter {
@@ -134,7 +68,7 @@
 
       @media screen and (max-width: $hd-up) {
         position: relative;
-        bottom: 25px;
+        bottom: 0;
       }
 
       @media screen and (max-width: $web-up) {
@@ -147,21 +81,13 @@
     }
 
     &__icon {
-      width: 60px;
-      height: 60px;    
+      width: 100px;
+      height: 150px;    
       background-color: black;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-    }
-
-    &__list {
-      display: flex;
-      justify-content: center;
-      color: white;
-      padding: 70px 0;
-      width: 100%;
     }
 
     span {
@@ -176,13 +102,6 @@
     &__title {
       display: flex;
       justify-content: center;
-    }
-
-    &__list {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding-top: 50px;  
     }
   }
 }
