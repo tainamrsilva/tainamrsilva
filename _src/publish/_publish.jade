@@ -1,9 +1,9 @@
-h2.section__block--lighter__title Publicações
-hr.divider
-.section__block--lighter.list
+h2.section__title Publicações
+hr.section__divider
+ul.list
 
   each publish, slug in public.publish._data
-    .list__box
-      a.list__links(href="#{ publish.link }" target="_blank") #{ publish.title }
+    li.list__item
+      a.list__link(href="#{ publish.link }" target="_blank") #{ publish.title }
         svg.list__vector(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
           path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')

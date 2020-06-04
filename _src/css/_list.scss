@@ -1,8 +1,8 @@
 .list {
   display: flex;
   flex-direction: column;
-  width: 100%;
-
+  width: 100%; 
+  
   @media screen and (min-width: $hd) {
     padding: 50px 0;
   }
@@ -19,11 +19,17 @@
     padding: 25px 0;
   }
 
-  .box--links {
+  &__item {
+    list-style: none;
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  &__item--small {
     @media screen and (min-width: $hd) {
       padding: 30px 0;
     }
-    
+
     @media screen and (max-width: $hd-up) {
       padding: 15px 0;
     }
@@ -41,12 +47,7 @@
     }
   }
 
-  &__box {
-    width: 100%;
-    padding: 25px 0;
-  }
-
-  &__links {
+  &__link {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -69,13 +70,9 @@
     transform: rotate(-90deg);
   }
 
-  &__contact {
-    display: flex;
-    flex-direction: row;
 
-    @media screen and (max-width: $tablet-up) {
-      font-size: 14px;
-      padding-top: 25px;
-    }
+  &__text {
+    display: flex;
+    justify-content: center;
   }
 }

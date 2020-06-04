@@ -1,4 +1,4 @@
-.section__block {
+.section {
   width: 50%;
   min-height: 100%;
   float: right;
@@ -9,99 +9,105 @@
     top: 35%;
     width: 100%;
   }
-   
-  &--lighter,
-  &--darker {
+
+  &__divider {
+    width: 70px;
+    border: 2px solid white;    
+  }
+
+  &__block {
     padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    
-    .divider {
-      width: 70px;
-      border: 2px solid white;    
-    }    
+    height: 100vh; 
   }
 
-  &--lighter {
-    background-color: #2F2F2F;
-
-    &__text {
-      color: white;
-      font-family: pt mono;
-      font-size: 16px;
-      text-align: justify;
-
-      @media screen and (min-width: $hd) {
-        line-height: 40px;
-      }
-
-      @media screen and (max-width: $hd-up) {
-        line-height: 28px;
-      }
-
-      @media screen and (max-width: $web-up) {
-        padding: 50px;
-        line-height: 45px;
-        }
-          
-      @media screen and (max-width: $tablet-up) {
-        padding: 0;
-        line-height: 30px;
-        font-size: 12px;
-      }
-
-      @media screen and (max-width: $mobile-up) {
-        line-height: 20px;
-        font-size: 11px;
-      }
-    }
-
-    &__vector {
-      padding: 50px;
-
-      @media screen and (min-width: $hd) {
-        position: absolute;
-        bottom: 0;
-      }
-
-      @media screen and (max-width: $hd-up) {
-        position: relative;
-        bottom: 0;
-      }
-
-      @media screen and (max-width: $web-up) {
-        bottom: 40px;
-      }
-
-      @media screen and (max-width: $mobile-up) {
-        bottom: 25px;
-      }
-    }
-
-    &__icon {
-      width: 100px;
-      height: 150px;    
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-    }
-
-    span {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  &--darker {
+  &__block--darker {
     background-color: #1E1E1E;
+  }
 
-    &__title {
-      display: flex;
-      justify-content: center;
+  &__block--lighter {
+    background-color: #2F2F2F;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 65px;
+    min-height: 65px;    
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  &__text {
+    color: white;
+    font-family: pt mono;
+    font-size: 16px;
+    text-align: justify;
+
+    @media screen and (min-width: $hd) {
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: $hd-up) {
+      line-height: 28px;
+    }
+
+    @media screen and (max-width: $web-up) {
+      padding: 50px;
+      line-height: 45px;
+    }
+        
+    @media screen and (max-width: $tablet-up) {
+      padding: 0;
+      line-height: 30px;
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: $mobile-up) {
+      line-height: 20px;
+      font-size: 11px;
     }
   }
+
+  &__vector {
+    padding: 50px;
+
+    @media screen and (min-width: $hd) {
+      position: absolute;
+      bottom: 0;
+    }
+
+    @media screen and (max-width: $hd-up) {
+      position: relative;
+      bottom: 0;
+    }
+
+    @media screen and (max-width: $web-up) {
+      bottom: 40px;
+    }
+
+    @media screen and (max-width: $mobile-up) {
+      bottom: 25px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0;
+  
+    @media screen and (max-width: $tablet-up) {
+      font-size: 14px;
+    }
+  } 
 }
