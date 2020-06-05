@@ -9,181 +9,105 @@
     top: 35%;
     width: 100%;
   }
-   
-  &--lighter,
-  &--darker {
+
+  &__divider {
+    width: 70px;
+    border: 2px solid white;    
+  }
+
+  &__block {
     padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    
-    .divider {
-      width: 70px;
-      border: 2px solid white;    
-    }
-  
-    .box {
-      display: flex;
-      flex-direction: column;
-
-      @media screen and (min-width: $hd) {
-        padding: 50px 0;
-      }
-
-      @media screen and (max-width: $hd-up) {
-        padding: 25px 0;
-      }
-
-      @media screen and (max-width: $web-up) {
-        padding: 50px 0;
-      }
-
-      @media screen and (max-width: $tablet-up) {
-        padding: 25px 0;
-      }
-    }
-
-    .box--links {
-      @media screen and (min-width: $hd) {
-        padding: 50px 0;
-      }
-      
-      @media screen and (max-width: $hd-up) {
-        padding: 20px 0;
-      }
-
-      @media screen and (max-width: $web-up) {
-        padding: 40px 0;
-      }
-
-      @media screen and (max-width: $tablet-up) {
-        padding: 25px 0;
-      }
-
-      @media screen and (max-width: $mobile-up) {
-        padding: 20px 0;
-      }
-
-    }
-
-    .box__links {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      text-decoration: none;
-      font-size: 18px;
-      border-bottom: 2px solid #454545;
-      padding: 0 0 15px;
-
-      @media screen and (max-width: $web-up) {
-        font-size: 16px;
-        padding: 0;
-      }
-
-      @media screen and (max-width: $mobile-up) {
-        font-size: 14px;
-      }
-    }
-
-    .box__image {
-      transform: rotate(-90deg);
-    }
+    height: 100vh; 
   }
 
-  &--lighter {
-    background-color: #2F2F2F;
-
-    &__text {
-      color: white;
-      font-family: pt mono;
-      font-size: 16px;
-      text-align: justify;
-
-      @media screen and (min-width: $hd) {
-        line-height: 60px;
-      }
-
-      @media screen and (max-width: $hd-up) {
-        line-height: 28px;
-      }
-
-      @media screen and (max-width: $web-up) {
-        padding: 50px;
-        line-height: 45px;
-        }
-          
-      @media screen and (max-width: $tablet-up) {
-        padding: 0;
-        line-height: 30px;
-        font-size: 12px;
-      }
-
-      @media screen and (max-width: $mobile-up) {
-        line-height: 20px;
-        font-size: 11px;
-      }
-    }
-
-    &__vector {
-      padding: 50px;
-
-      @media screen and (min-width: $hd) {
-        position: absolute;
-        bottom: 0;
-      }
-
-      @media screen and (max-width: $hd-up) {
-        position: relative;
-        bottom: 25px;
-      }
-
-      @media screen and (max-width: $web-up) {
-        bottom: 40px;
-      }
-
-      @media screen and (max-width: $mobile-up) {
-        bottom: 25px;
-      }
-    }
-
-    &__icon {
-      width: 60px;
-      height: 60px;    
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-    }
-
-    &__section {
-      display: flex;
-      justify-content: center;
-      color: white;
-      padding: 70px 0;
-      width: 100%;
-    }
-
-    span {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  &--darker {
+  &__block--darker {
     background-color: #1E1E1E;
+  }
 
-    &__title {
-      display: flex;
-      justify-content: center;
+  &__block--lighter {
+    background-color: #2F2F2F;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 65px;
+    min-height: 65px;    
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  &__text {
+    color: white;
+    font-family: pt mono;
+    font-size: 16px;
+    text-align: justify;
+
+    @media screen and (min-width: $hd) {
+      line-height: 40px;
     }
 
-    &__section {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding-top: 50px;  
+    @media screen and (max-width: $hd-up) {
+      line-height: 28px;
+    }
+
+    @media screen and (max-width: $web-up) {
+      padding: 50px;
+      line-height: 45px;
+    }
+        
+    @media screen and (max-width: $tablet-up) {
+      padding: 0;
+      line-height: 30px;
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: $mobile-up) {
+      line-height: 20px;
+      font-size: 11px;
     }
   }
+
+  &__vector {
+    padding: 50px;
+
+    @media screen and (min-width: $hd) {
+      position: absolute;
+      bottom: 0;
+    }
+
+    @media screen and (max-width: $hd-up) {
+      position: relative;
+      bottom: 0;
+    }
+
+    @media screen and (max-width: $web-up) {
+      bottom: 40px;
+    }
+
+    @media screen and (max-width: $mobile-up) {
+      bottom: 25px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0;
+  
+    @media screen and (max-width: $tablet-up) {
+      font-size: 14px;
+    }
+  } 
 }
