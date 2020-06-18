@@ -78,7 +78,7 @@
     }
   }
 
-  &__vector {
+  &__vector:not(.section__vector--small) {
     margin-top: 50px;
 
     @media screen and (min-width: $hd) {
@@ -122,44 +122,6 @@
     width: 100%;
     flex-direction: row-reverse;
     align-items: flex-start;
-  }
-
-  &__button--visible {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 10px 0 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #bfbfbf;
-    z-index: 9999;
-  }
-
-  &__button--hidden {
-    visibility: hidden;
-    margin: 20px -25px 0 0;
-    width: 175px;
-    height: 31px;
-    background-color: #bfbfbf;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
-    font-size: 14px;
-    transition: all .5s ease-in-out;
     text-decoration: none;
-    z-index: 9998;
-    opacity: 0;
-  }
-
-  &__button--visible:hover + &__button--hidden {
-    visibility: visible;
-    opacity: 1;
-    background-color:  #cccccc;
-  }
-  
-  &__vector--up {
-    transform: rotate(180deg);
   }
 }

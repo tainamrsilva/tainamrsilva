@@ -21,11 +21,11 @@
         svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
           path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
    
-    .section__button
-        a.section__button--visible(href="#sobre")
-          svg.section__vector--up(xmlns='http://www.w3.org/2000/svg', width='13', height='13', fill='none', viewbox='0 0 24 24')
-            path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
-        span.section__button--hidden Ir para o topo
+    a.section__button.button(href="#sobre")
+      .button__holder
+        svg.section__vector.section__vector--small(xmlns='http://www.w3.org/2000/svg', width='16', height='16', fill='none', viewbox='0 0 16 16')
+          path(fill='#fff', d="M14.3134 9.6866L16 8L8 0L0 8L1.6866 9.6866L6.80722 4.56598L6.80722 16H9.19278V4.56598L14.3134 9.6866Z")
+      span.button__text Ir para o topo
           
     #curriculo.section__block.section__block--darker
       != partial("resume/_resume")
