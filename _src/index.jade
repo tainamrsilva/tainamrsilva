@@ -11,16 +11,22 @@
       a.cover__links(href="#contato") Contato
 
   #section.section
-    .section__block.section__block--lighter
+    #sobre.section__block.section__block--lighter
       p.section__text Bacharel em Arquitetura e Urbanismo pela Universidade do Sagrado Coração (USC) de Bauru-SP. Mestre em Arquitetura e Urbanismo pela Faculdade de Arquitetura, Artes e Comunicação (FAAC) da Universidade Estadual Paulista (UNESP) de Bauru na linha de Teoria, História e Projeto (bolsista FAPESP Processo 2017/10302-5). Durante o mestrado, realizou estágio de pesquisa com apoio da FAPESP na École Nationale Supérieure d'Architecture, cidade de Paris, França, com supervisão da prof. Dra. Karen Bowie (BEPE Processo 2018/01711-1). 
         br
         | É colaboradora no projeto Memória Ferroviária (FAPESP Processo 2016/15921-2), coordenado pelo prof. Dr. Eduardo Romero de Oliveira.
         br
         | Tem como recorte de estudo o século XIX e se interessa pelas pesquisas na área de arquitetura industrial e ferroviária; história da engenharia; e tratados ferroviários, especialmente produção europeia.
-      .section__vector
+      a.section__vector(href="#curriculo")
         svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
           path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
-  
+   
+    a.section__button.button(href="#sobre")
+      .button__holder
+        svg.section__vector.section__vector--small(xmlns='http://www.w3.org/2000/svg', width='16', height='16', fill='none', viewbox='0 0 16 16')
+          path(fill='#fff', d="M14.3134 9.6866L16 8L8 0L0 8L1.6866 9.6866L6.80722 4.56598L6.80722 16H9.19278V4.56598L14.3134 9.6866Z")
+      span.button__text Ir para o topo
+          
     #curriculo.section__block.section__block--darker
       != partial("resume/_resume")
 
