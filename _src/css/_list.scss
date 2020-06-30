@@ -22,30 +22,14 @@
   &__item {
     list-style: none;
     width: 100%;
-    padding: 25px 0;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
   }
 
-  &__item--small {
-    @media screen and (min-width: $hd) {
-      padding: 30px 0;
-    }
-
-    @media screen and (max-width: $hd-up) {
-      padding: 15px 0;
-    }
-
-    @media screen and (max-width: $web-up) {
-      padding: 40px 0;
-    }
-
-    @media screen and (max-width: $tablet-up) {
-      padding: 25px 0;
-    }
-
-    @media screen and (max-width: $mobile-up) {
-      padding: 20px 0;
-    }
-  }
+  // &__item--small {
+  //   padding: 0 0 15px;
+  //   margin: 0 0 15px;
+  // }
 
   &__link {
     display: flex;
@@ -54,20 +38,24 @@
     text-decoration: none;
     font-size: 18px;
     border-bottom: 2px solid #454545;
-    padding: 0 0 15px;
+    padding: 0 0 25px;
 
     @media screen and (max-width: $web-up) {
       font-size: 16px;
-      padding: 0;
     }
 
-    @media screen and (max-width: $mobile-up) {
+    @media screen and (max-width: $web) {
       font-size: 14px;
     }
   }
 
   &__vector {
     transform: rotate(-90deg);
+    margin-left: 15px;
+
+    @media screen and (max-width: $mobile) {
+      max-width: 16px;
+    }
   }
 
 

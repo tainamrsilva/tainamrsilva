@@ -3,9 +3,10 @@
   min-height: 100%;
   float: right;
   overflow-y: scroll;
+  z-index: 9999;
+  position: relative;
 
   @media screen and (max-width: $web-up) {
-    position: relative;
     top: 35%;
     width: 100%;
   }
@@ -16,11 +17,29 @@
   }
 
   &__block {
-    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh; 
+    position: relative;
+    
+    @media screen and ( min-width: $web-up ){
+      min-height: 100vh;
+    }
+
+    @media screen and ( min-width: $mobile-up ){
+      padding: 50px;
+    }
+
+    @media screen and ( max-width: $mobile ){
+      padding: 40px 20px;
+    }
+  }
+
+  &__block:first-of-type {
+
+    @media screen and ( max-width: $web ){
+      padding-bottom: 85px;
+    }
   }
 
   &__block--darker {
@@ -34,6 +53,7 @@
   &__title {
     display: flex;
     justify-content: center;
+    margin: 0 0 15px;
   }
 
   &__icon {
@@ -44,6 +64,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    margin-bottom: 20px;
   }
 
   &__text {
@@ -61,12 +82,10 @@
     }
 
     @media screen and (max-width: $web-up) {
-      padding: 50px;
       line-height: 45px;
     }
         
     @media screen and (max-width: $tablet-up) {
-      padding: 0;
       line-height: 30px;
       font-size: 12px;
     }
@@ -78,25 +97,9 @@
   }
 
   &__vector {
-    padding: 50px;
-
-    @media screen and (min-width: $hd) {
-      position: absolute;
-      bottom: 0;
-    }
-
-    @media screen and (max-width: $hd-up) {
-      position: relative;
-      bottom: 0;
-    }
-
-    @media screen and (max-width: $web-up) {
-      bottom: 40px;
-    }
-
-    @media screen and (max-width: $mobile-up) {
-      bottom: 25px;
-    }
+    position: absolute;
+    padding: 0 50px;
+    bottom: 20px;
   }
 
   &__contact {

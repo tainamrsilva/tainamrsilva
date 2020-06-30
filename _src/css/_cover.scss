@@ -4,6 +4,7 @@
   float: left;
   background-image: url('../assets/taina.png');
   background-repeat: no-repeat;
+  z-index: 9998;
 
   @media screen and (min-width: $web) {
     width: 50%;
