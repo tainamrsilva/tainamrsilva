@@ -19,22 +19,24 @@ body {
 a,
 span {
   color: white;
-  font-family: pt mono;
+  font-family: 'PT Mono', monospace;
   font-weight: bold;
 }
 
-h1 {
-  font-family: Lucida Grande;
-  font-size: 85px;
-  color: white;
-}
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Lucida Grande;
+  font-family: 'Arimo', sans-serif;
   color: white;
+}
+
+h1 {
+  font-size: 85px;
+}
+
+h2 {
   font-size: 30px;
 }
