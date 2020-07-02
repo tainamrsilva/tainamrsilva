@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "harp server _src & browser-sync start --no-open --proxy 'localhost:9000' --files '**/*.jade, **/*.scss, **/*.json, **/*.js, **/*.md' --no-notify",
-    "build": "harp compile _src docs && touch docs/CNAME && echo tainasilva.com.br >> CNAME"
+    "build": "harp compile _src docs && touch docs/CNAME && echo tainasilva.com.br >> docs/CNAME"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
