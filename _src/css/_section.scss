@@ -8,8 +8,12 @@
   height: 100vh;
 
   @media screen and (max-width: $web-up) {
-    top: 35%;
+    // top: 50px;
     width: 100%;
+  }
+
+  @media screen and (max-width: $tablet-up) {
+    z-index: 9998;
   }
 
   &__divider {

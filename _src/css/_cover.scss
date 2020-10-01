@@ -5,7 +5,8 @@
   background-image: url('../assets/taina.png');
   background-repeat: no-repeat;
   z-index: 9998;
-
+  transition: all .25s linear;
+  
   @media screen and (min-width: $web) {
     width: 50%;
     height: 100%;
@@ -15,11 +16,60 @@
 
   @media screen and (max-width: $web-up) {
     width: 100%;
-    height: 35%;
-    top: 0;
+    height: 250px;
+    position: relative;
     background-size: 100%;
     background-position: center;
   }
+
+  @media screen and (max-width: $tablet-up){
+    position: absolute;
+    height: 0;
+    z-index: 9999;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  &__input,
+  &__button  {
+    display: none;
+    transition: all .25s linear;
+
+    @media screen and (max-width: $tablet-up) {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: $tablet-up) {
+      height: 25px;
+      width: 25px;
+      margin: 10px;
+      cursor: pointer;
+      position: relative;
+      z-index: 9999;
+    }
+  }
+
+  &__input:checked ~ .cover__menu {
+    @media screen and (max-width: $tablet-up){
+      visibility: visible;
+      background-color: grey;
+      position: relative;
+      bottom: 0;
+    }
+  }
+
+  &__logo {
+    fill: white;
+    height: 25px;
+    width: 25px;
+  }
+
+
 
   &__headline {
     display: flex;
@@ -35,12 +85,12 @@
     }
 
     @media screen and (max-width: $tablet-up) {
-      padding: 25px;
+      display: none;
     }
 
-    @media screen and (max-width: $mobile-up) {
-      padding: 20px;
-    }
+    // @media screen and (max-width: $mobile-up) {
+    //   padding: 20px;
+    // }
   }
 
   &__title,
@@ -111,6 +161,15 @@
 
     @media screen and (max-width: $tablet-up) {
       font-size: 13px;
+      visibility: hidden;
+      transition: all .25s linear;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 150px;
+      position: relative;
+      top: -45px;
+      align-items: center;
+      display: flex;
     }
   }
 
