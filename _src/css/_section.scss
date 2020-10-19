@@ -10,11 +10,16 @@
   @media screen and (max-width: $web-up) {
     // top: 50px;
     width: 100%;
+    z-index: unset;
+    overflow: unset;
+    top: 200px;
   }
 
-  @media screen and (max-width: $tablet-up) {
-    z-index: 9998;
-  }
+  // @media screen and (max-width: $tablet-up) {
+  //   z-index: unset;
+  //   overflow: unset;
+  //   top: 200px;
+  // }
 
   &__divider {
     width: 70px;
