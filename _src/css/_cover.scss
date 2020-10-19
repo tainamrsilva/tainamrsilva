@@ -17,7 +17,6 @@
   @media screen and (max-width: $web-up) {
     width: 100%;
     height: 250px;
-    // position: relative;
     background-size: 100%;
     background-position: center;
     position: absolute;
@@ -25,12 +24,11 @@
     z-index: 9998;
   }
 
-  @media screen and (max-width: $tablet-up){
-    position: absolute;
-    height: 200px;
-    z-index: 9998;
-    // top: 200px;
-  }
+  // @media screen and (max-width: $tablet-up){
+  //   position: absolute;
+  //   height: 200px;
+  //   z-index: 9998;
+  // }
 
   #menu {
     display: none;
@@ -88,14 +86,6 @@
     @media screen and (min-width: $tablet) {
       padding: 50px;
     }
-
-    // @media screen and (max-width: $tablet-up) {
-    //   display: none;
-    // }
-
-    // @media screen and (max-width: $mobile-up) {
-    //   padding: 20px;
-    // }
   }
 
   &__title,
@@ -154,16 +144,6 @@
       padding: 50px;
     }
 
-    // @media screen and (max-width: $web-up) {
-    //   position: absolute;
-    //   width: 100%;
-    //   font-size: 14px;
-    //   bottom: 10%;
-    //   display: flex;
-    //   justify-content: space-evenly;
-    //   padding: 15px;
-      
-    // }
     @media screen and (max-width: $web-up) {
       font-size: 13px;
       visibility: hidden;
@@ -175,6 +155,7 @@
       top: -200px;
       align-items: center;
       display: flex;
+      width: 100%;
     }
   }
 
