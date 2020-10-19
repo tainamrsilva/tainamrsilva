@@ -17,15 +17,19 @@
   @media screen and (max-width: $web-up) {
     width: 100%;
     height: 250px;
-    position: relative;
+    // position: relative;
     background-size: 100%;
     background-position: center;
+    position: absolute;
+    height: 200px;
+    z-index: 9998;
   }
 
   @media screen and (max-width: $tablet-up){
     position: absolute;
-    height: 0;
-    z-index: 9999;
+    height: 200px;
+    z-index: 9998;
+    // top: 200px;
   }
 
   #menu {
@@ -37,29 +41,30 @@
     display: none;
     transition: all .25s linear;
 
-    @media screen and (max-width: $tablet-up) {
+    @media screen and (max-width: $web-up) {
       display: block;
       cursor: pointer;
     }
   }
 
   &__button {
-    @media screen and (max-width: $tablet-up) {
+    @media screen and (max-width: $web-up) {
       height: 25px;
       width: 25px;
       margin: 10px;
       cursor: pointer;
-      position: relative;
+      position: fixed;
       z-index: 9999;
     }
   }
 
   &__input:checked ~ .cover__menu {
-    @media screen and (max-width: $tablet-up){
+    @media screen and (max-width: $web-up){
       visibility: visible;
       background-color: grey;
-      position: relative;
-      bottom: 0;
+      top: 0;
+      position: fixed;
+      width: 100%;
     }
   }
 
@@ -69,8 +74,6 @@
     width: 25px;
   }
 
-
-
   &__headline {
     display: flex;
     flex-direction: column;
@@ -78,15 +81,17 @@
 
     @media screen and (max-width: $web-up) {
       align-items: center;
+      height: 100%;
+      justify-content: center;
     }
 
     @media screen and (min-width: $tablet) {
       padding: 50px;
     }
 
-    @media screen and (max-width: $tablet-up) {
-      display: none;
-    }
+    // @media screen and (max-width: $tablet-up) {
+    //   display: none;
+    // }
 
     // @media screen and (max-width: $mobile-up) {
     //   padding: 20px;
@@ -149,25 +154,25 @@
       padding: 50px;
     }
 
+    // @media screen and (max-width: $web-up) {
+    //   position: absolute;
+    //   width: 100%;
+    //   font-size: 14px;
+    //   bottom: 10%;
+    //   display: flex;
+    //   justify-content: space-evenly;
+    //   padding: 15px;
+      
+    // }
     @media screen and (max-width: $web-up) {
-      position: absolute;
-      width: 100%;
-      font-size: 14px;
-      bottom: 10%;
-      display: flex;
-      justify-content: space-evenly;
-      padding: 15px;
-    }
-
-    @media screen and (max-width: $tablet-up) {
       font-size: 13px;
       visibility: hidden;
       transition: all .25s linear;
       flex-direction: column;
       justify-content: space-around;
-      height: 150px;
-      position: relative;
-      top: -45px;
+      height: 200px;
+      position: fixed;
+      top: -200px;
       align-items: center;
       display: flex;
     }
