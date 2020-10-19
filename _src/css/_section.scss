@@ -1,25 +1,20 @@
 .section {
-  width: 50%;
-  min-height: 100%;
-  float: right;
-  overflow-y: scroll;
-  z-index: 9999;
   position: relative;
-  height: 100vh;
 
-  @media screen and (max-width: $web-up) {
-    // top: 50px;
-    width: 100%;
-    z-index: unset;
-    overflow: unset;
-    top: 200px;
+  //Breakpoint Desktop up
+  @media screen and (min-width: $web) {
+    width: 50%;
+    min-height: 100%;
+    float: right;
+    overflow-y: scroll;
+    z-index: 9999;
+    height: 100vh;
   }
 
-  // @media screen and (max-width: $tablet-up) {
-  //   z-index: unset;
-  //   overflow: unset;
-  //   top: 200px;
-  // }
+  @media screen and (max-width: $web-up) {
+    width: 100%;
+    top: 200px;
+  }
 
   &__divider {
     width: 70px;
@@ -140,5 +135,10 @@
     flex-direction: row-reverse;
     align-items: flex-start;
     text-decoration: none;
+  }
+
+  &__anchor {
+    position: absolute;
+    top: -100%;
   }
 }
