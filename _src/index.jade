@@ -26,7 +26,6 @@
       a.section__vector(href="#curriculo")
         svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
           path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
-   
     a.section__button.button(href="#anchor-top")
       .button__holder
         svg.section__vector.section__vector--small(xmlns='http://www.w3.org/2000/svg', width='16', height='16', fill='none', viewbox='0 0 16 16')
@@ -35,13 +34,10 @@
           
     #curriculo.section__block.section__block--darker
       != partial("resume/_resume")
-
     #publicacoes.section__block.section__block--lighter
       != partial("publish/_publish")
-         
     #links.section__block.section__block--darker
       != partial("links/_links")
-
     #contato.section__block.section__block--lighter
       .section__icon
         svg(xmlns='http://www.w3.org/2000/svg', width='32', height='23', fill='none', viewbox='0 0 32 23')
