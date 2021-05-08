@@ -1,0 +1,14 @@
+.error {
+  background-color: #1E1E1E;
+  width: 100%;
+  min-height: 100%;
+  padding: 10%;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
