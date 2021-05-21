@@ -19,6 +19,13 @@
   &__divider {
     width: 70px;
     border: 2px solid white;    
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 55px;
+    }
+    @media screen and (max-width: $tablet-up) {
+      margin-bottom: 25px;
+    }
   }
 
   &__block {
@@ -27,23 +34,27 @@
     align-items: center;
     position: relative;
     
-    @media screen and ( min-width: $web-up ){
+    @media screen and (min-width: $web-up) {
       min-height: 100vh;
     }
 
-    @media screen and ( min-width: $mobile-up ){
+    @media screen and (min-width: $mobile-up) {
       padding: 50px;
     }
 
-    @media screen and ( max-width: $mobile ){
+    @media screen and (max-width: $mobile) {
       padding: 40px 20px;
     }
   }
-
+  
   &__block:first-of-type {
-
-    @media screen and ( max-width: $web ){
+    
+    @media screen and (max-width: $web) {
       padding-bottom: 85px;
+    }
+    
+    @media screen and (max-width: $mobile) {
+      padding-bottom: 60px;
     }
   }
 
@@ -59,6 +70,10 @@
     display: flex;
     justify-content: center;
     margin: 0 0 15px;
+
+    @media screen and (max-width: $tablet-up) {
+      font-size: 20px;
+    }
   }
 
   &__icon {
@@ -75,29 +90,14 @@
   &__text {
     color: white;
     font-family: 'PT Mono', monospace;
-    font-size: 16px;
     text-align: justify;
-
-    @media screen and (min-width: $hd) {
-      line-height: 40px;
+    
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
     }
 
-    @media screen and (max-width: $hd-up) {
-      line-height: 28px;
-    }
-
-    @media screen and (max-width: $web-up) {
-      line-height: 45px;
-    }
-        
     @media screen and (max-width: $tablet-up) {
-      line-height: 30px;
-      font-size: 12px;
-    }
-
-    @media screen and (max-width: $mobile-up) {
-      line-height: 20px;
-      font-size: 11px;
+      font-size: 14px;
     }
   }
 
@@ -115,9 +115,10 @@
   &__contact {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
     padding: 25px 0;
+    white-space: nowrap;
   
     @media screen and (max-width: $tablet-up) {
       font-size: 14px;
@@ -125,20 +126,23 @@
   } 
 
   &__button {
-    position: sticky;
-    top: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row-reverse;
     height: 0;
     padding: 0;
-    z-index: 9999;
-    display: flex;
+    position: sticky;
+    top: 0;
     width: 100%;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    text-decoration: none;
+    z-index: 9999;
   }
 
   &__anchor {
     position: absolute;
     top: -100%;
+  }
+
+  &__link {
+    @extend %link;
   }
 }

@@ -22,4 +22,17 @@
   &__title {
     margin: 0;
   }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__link {
+    @extend %link;
+  }
 }

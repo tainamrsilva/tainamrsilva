@@ -24,12 +24,6 @@
     z-index: 9998;
   }
 
-  // @media screen and (max-width: $tablet-up){
-  //   position: absolute;
-  //   height: 200px;
-  //   z-index: 9998;
-  // }
-
   #menu {
     display: none;
   }
@@ -94,9 +88,12 @@
   }
 
   &__title {
-    font-size: 90px;
     margin: 0;
-
+    
+    @media screen and (min-width: $web) {
+      font-size: 75px;
+    }
+    
     @media screen and (max-width: $web-up) {
       font-size: 40px;
     }
@@ -137,11 +134,11 @@
 
   &__menu {
     font-weight: bolder;
+    position: fixed;
     
     @media screen and (min-width: $web) {
-      position: fixed;
-      bottom: 25px;
-      padding: 50px;
+      bottom: 75px;
+      left: 50px;
     }
 
     @media screen and (max-width: $web-up) {
@@ -151,7 +148,6 @@
       flex-direction: column;
       justify-content: space-around;
       height: 200px;
-      position: fixed;
       top: -200px;
       align-items: center;
       display: flex;
@@ -159,9 +155,15 @@
     }
   }
 
-  &__links {
+  &__menu:hover .cover__link:not(:hover) {
+    opacity: .5;
+  }
+
+  &__link {
+    @extend %link;
     margin-right: 30px;
     color: white;
+    transition: opacity .25s linear;
 
     @media screen and (max-width: $web-up) {
       margin: 0;

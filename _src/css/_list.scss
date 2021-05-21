@@ -1,40 +1,31 @@
 .list {
   display: flex;
   flex-direction: column;
+  padding: 0;
   width: 100%; 
-  
-  @media screen and (min-width: $hd) {
-    padding: 50px 0;
-  }
 
-  @media screen and (max-width: $hd-up) {
-    padding: 25px 0;
-  }
-
-  @media screen and (max-width: $web-up) {
-    padding: 50px 0;
-  }
-
-  @media screen and (max-width: $tablet-up) {
-    padding: 25px 0;
+  &:hover .list__link:not(:hover) {
+    opacity: .5;
   }
 
   &__item {
     list-style: none;
     width: 100%;
-    padding: 0 0 15px;
-    margin: 0 0 15px;
   }
 
   &__link {
+    border-bottom: 2px solid #454545;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    text-decoration: none;
-    font-size: 18px;
-    border-bottom: 2px solid #454545;
+    margin-bottom: 30px;
     padding: 0 0 25px;
-
+    transition: border .5s linear, opacity .5s linear;
+    width: 100%;
+    
+    @media screen and (min-width: $web) {
+      font-size: 18px;
+    }
+    
     @media screen and (max-width: $web-up) {
       font-size: 16px;
     }
@@ -44,6 +35,10 @@
     }
   }
 
+  &__link:hover {
+    border-color: white;
+  }
+
   &__vector {
     transform: rotate(-90deg);
     margin-left: 15px;
@@ -51,11 +46,5 @@
     @media screen and (max-width: $mobile) {
       max-width: 16px;
     }
-  }
-
-
-  &__text {
-    display: flex;
-    justify-content: center;
   }
 }
