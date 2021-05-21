@@ -170,7 +170,7 @@
     @extend %link;
     color: $white;
     margin-right: 30px;
-    transition: opacity .25s linear;
+    transition: opacity .25s linear, border .25s linear;
 
     @media screen and (max-width: $web-up) {
       margin: 0;
