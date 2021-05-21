@@ -18,7 +18,7 @@ body {
 
 a,
 span {
-  color: white;
+  color: $white;
   font-family: 'PT Mono', monospace;
   font-weight: bold;
 }
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
   font-family: 'Arimo', sans-serif;
-  color: white;
+  color: $white;
 }
 
 h1 {
