@@ -10,15 +10,15 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "harp": "^0.32.0"
+    "harp": "^0.34.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tainamrsilva-ts/ts.git"
+    "url": "git+https://github.com/tainamrsilva/tainamrsilva.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tainamrsilva-ts/ts/issues"
+    "url": "https://github.com/tainamrsilva/tainamrsilva/issues"
   },
-  "homepage": "https://github.com/tainamrsilva-ts/ts#readme"
+  "homepage": "https://github.com/tainamrsilva/tainamrsilva#readme"
 }
