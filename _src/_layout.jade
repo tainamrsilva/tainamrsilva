@@ -27,7 +27,9 @@ html.no-js(lang="pt-br")
     meta(name='msapplication-TileColor', content='#2f2f2f')
     meta(name='theme-color', content='#ffffff')
     link(href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet")
-    link(rel="stylesheet" href="css/main.css")
+    link(rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+    noscript 
+      link(rel="stylesheet" href="css/main.css")
     title Tainá Silva
   body
     != yield

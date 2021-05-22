@@ -1,51 +1,17 @@
 main.container
-  #header.cover
-    input.cover__input(type="checkbox" id="menu")
-    label.cover__button(for="menu")
-      svg.cover__logo(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 384 384')
-        path(d='M0 277.333h384V320H0zM0 170.667h384v42.667H0zM0 64h384v42.667H0z')
-  
-    .cover__headline
-      h1.cover__title Tainá M. Silva
-      span.cover__subtitle Arquiteta Pesquisadora
-      hr.cover__divider
-    nav.cover__menu
-      a.cover__link(href="#curriculo") Currículo
-      a.cover__link(href="#publicacoes") Publicações
-      a.cover__link(href="#links") Links
-      a.cover__link(href="#contato") Contato
+  != partial("_cover")
 
   #section.section
     #anchor-top.section__anchor
-    section#sobre.section__block.section__block--lighter
-      p.section__text Bacharel em Arquitetura e Urbanismo pela Universidade do Sagrado Coração (USC) de Bauru-SP. 
-      p.section__text Mestre em Arquitetura e Urbanismo pela Faculdade de Arquitetura, Artes e Comunicação (FAAC) da Universidade Estadual Paulista (UNESP) de Bauru na linha de Teoria, História e Projeto (bolsista FAPESP Processo 2017/10302-5). Durante o mestrado, realizou estágio de pesquisa com apoio da FAPESP na École Nationale Supérieure d'Architecture, cidade de Paris, França, com supervisão da prof. Dra. Karen Bowie (BEPE Processo 2018/01711-1). 
-      p.section__text Atualmente é aluna de doutorado no Programa de Pós-graduação em História da Universidade Estadual Paulista (UNESP) na linha de História e Cultura Social. Tem como recorte de estudo o século XIX e pesquisa os temas: arquitetura industrial e ferroviária, história da engenharia e tratados ferroviários - especialmente produção europeia. 
-      p.section__text É também colaboradora no projeto Memória Ferroviária (FAPESP Processo 2016/15921-2), coordenado pelo prof. Dr. Eduardo Romero de Oliveira. 
-      a.section__vector(href="#curriculo")
-        svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', fill='none', viewbox='0 0 24 24')
-          path(fill='#fff', d='M2.53 9.47L0 12l12 12 12-12-2.53-2.53-7.68 7.681V0h-3.58v17.151l-7.68-7.68z')
-    a.section__button.button(href="#anchor-top")
+    != partial("_intro")
+
+    a.section__button.button(href="#anchor-top" aria-label="Ir para o Topo")
       .button__holder
         svg.section__vector.section__vector--small(xmlns='http://www.w3.org/2000/svg', width='16', height='16', fill='none', viewbox='0 0 16 16')
           path(fill='#fff', d="M14.3134 9.6866L16 8L8 0L0 8L1.6866 9.6866L6.80722 4.56598L6.80722 16H9.19278V4.56598L14.3134 9.6866Z")
       span.button__text Ir para o topo
-          
-    section#curriculo.section__block.section__block--darker
-      != partial("resume/_resume")
-    section#publicacoes.section__block.section__block--lighter
-      != partial("publish/_publish")
-    section#links.section__block.section__block--darker
-      != partial("links/_links")
-    section#contato.section__block.section__block--lighter
-      .section__icon
-        svg(xmlns='http://www.w3.org/2000/svg', width='32', height='23', fill='none', viewbox='0 0 32 23')
-          path(fill='#fff', d='M29.257 0H2.743C2.015 0 1.318.297.803.825A2.855 2.855 0 000 2.816v17.368c0 .747.289 1.463.803 1.991a2.707 2.707 0 001.94.825h26.514c.728 0 1.425-.297 1.94-.825A2.855 2.855 0 0032 20.184V2.816c0-.747-.289-1.463-.803-1.991A2.707 2.707 0 0029.257 0zM2.743 1.878h26.514c.243 0 .475.098.647.275a.952.952 0 01.267.663v.423L16 12.063 1.829 3.24v-.423c0-.249.096-.487.267-.663a.902.902 0 01.647-.275zm26.514 19.244H2.743a.903.903 0 01-.647-.274.952.952 0 01-.267-.664V5.444l13.714 8.497a.807.807 0 00.914 0l13.714-8.496v14.739a.952.952 0 01-.267.663.902.902 0 01-.647.275z')
-      h2.section__title Contato
-      hr.section__divider
-      .section__contact
-        a.section__link(href="mailto: contato@tainasilva.com.br") Clique aqui
-        | &nbsp; &nbsp;
-        span.section__text para enviar um email 
 
-      
+    != partial("resume/_resume")
+    != partial("publish/_publish")
+    != partial("links/_links")
+    != partial("_contact")
