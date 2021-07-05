@@ -9,8 +9,8 @@
     "build": "harp compile _src docs && touch docs/CNAME && echo tainasilva.com.br >> docs/CNAME"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "harp": "^0.40.3"
+    "browser-sync": "^2.26.14",
+    "harp": "^0.34.0"
   },
   "repository": {
     "type": "git",

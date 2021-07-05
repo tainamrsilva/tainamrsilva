@@ -90,6 +90,7 @@
   &__text {
     color: $white;
     font-family: 'PT Mono', monospace;
+    line-height: 1.5;
     text-align: justify;
     
     @media screen and (min-width: $tablet) {
