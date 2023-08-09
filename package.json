@@ -6,7 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "harp server _src & browser-sync start --no-open --proxy 'localhost:9000' --files '**/*.jade, **/*.scss, **/*.json, **/*.js, **/*.md' --no-notify",
-    "build": "harp compile _src docs && touch docs/CNAME && echo tainasilva.com.br >> docs/CNAME"
+    "build": "harp compile _src docs && touch docs/CNAME && echo tainasilva.com.br >> docs/CNAME",
+    "dev:backend": "cd ./backend && npm run develop",
+    "prod:backend": "cd ./backend && npm run start",
+    "build:backend": "cd ./backend && npm run build"
   },
   "devDependencies": {
     "browser-sync": "^2.27.1",

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "introducoes",
+  "info": {
+    "singularName": "introducao",
+    "pluralName": "introducoes",
+    "displayName": "Introdução",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "textoPrincipal": {
+      "type": "richtext",
+      "default": "Bacharel em Arquitetura e Urbanismo pela Universidade do Sagrado Coração (USC) de Bauru-SP.  Mestre em Arquitetura e Urbanismo pela Faculdade de Arquitetura, Artes e Comunicação (FAAC) da Universidade Estadual Paulista (UNESP) de Bauru na linha de Teoria, História e Projeto (bolsista FAPESP Processo 2017/10302-5). Durante o mestrado, realizou estágio de pesquisa com apoio da FAPESP na École Nationale Supérieure d'Architecture, cidade de Paris, França, com supervisão da prof. Dra. Karen Bowie (BEPE Processo 2018/01711-1).  Atualmente é aluna de doutorado no Programa de Pós-graduação em História da Universidade Estadual Paulista (UNESP) na linha de História e Cultura Social. Tem como recorte de estudo o século XIX e pesquisa os temas: arquitetura industrial e ferroviária, história da engenharia e tratados ferroviários - especialmente produção europeia.  É também colaboradora no projeto Memória Ferroviária (FAPESP Processo 2016/15921-2), coordenado pelo prof. Dr. Eduardo Romero de Oliveira.",
+      "required": true
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "nome": {
+      "type": "string",
+      "default": "Tainá M. Silva",
+      "required": true
+    },
+    "profissao": {
+      "type": "string",
+      "default": "Arquiteta Pesquisadora",
+      "required": true
+    }
+  }
+}
