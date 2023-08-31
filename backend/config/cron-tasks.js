@@ -3,8 +3,8 @@ const api = new axios.Axios();
 
 module.exports = {
   preventSleep: {
-    task: ({ env }) => {
-      api.get(env('SITE_URL'));
+    task: () => {
+      api.get('https://tainasilvateste.onrender.com');
     },
     options: {
       rule: "*/14 * * * *",
