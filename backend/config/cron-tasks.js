@@ -1,10 +1,9 @@
-const axios = require('axios');
-const api = new axios.Axios();
+const fetch = require('node-fetch').default;
 
 module.exports = {
   preventSleep: {
     task: () => {
-      api.get('https://tainasilvateste.onrender.com');
+      fetch('https://tainasilvateste.onrender.com');
     },
     options: {
       rule: "*/14 * * * *",
