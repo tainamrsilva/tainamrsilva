@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "contatos",
+  "info": {
+    "singularName": "contato",
+    "pluralName": "contatos",
+    "displayName": "Contato",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "default": "contato@tainasilva.com.br",
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "default": "Contato",
+      "required": true
+    }
+  }
+}

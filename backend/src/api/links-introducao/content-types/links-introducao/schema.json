@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "links_introducoes",
+  "info": {
+    "singularName": "links-introducao",
+    "pluralName": "links-introducoes",
+    "displayName": "LinksIntroducao",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "textoAlternativo": {
+      "type": "string"
+    }
+  }
+}

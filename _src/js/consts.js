@@ -1,0 +1,1 @@
+const STRAPI_BASE_URL = 'https://tainasilvateste.onrender.com';
